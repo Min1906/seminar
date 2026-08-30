@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Portofolio Seminar PPG | Muhammad Iqbal Nugroho, S.Kom. - Calon Pendidik Informatika</title>
+  <meta name="description"
+    content="Website Canvas e-Portofolio Seminar Kelulusan PPG Prajabatan Informatika - Muhammad Iqbal Nugroho, S.Kom. Menampilkan Visi Pendidikan, Ruang Refleksi, Galeri Karya Inovasi, RTL, dan Arsip Dokumen.">
+  <meta name="author" content="Muhammad Iqbal Nugroho, S.Kom.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <!-- Ambient Light Orbs -->
+  <div class="bg-ambient-orb orb-1"></div>
+  <div class="bg-ambient-orb orb-2"></div>
+  <div class="bg-ambient-orb orb-3"></div>
+
+  <!-- =========================================================================
+       1. STICKY NAVBAR (HEADER)
+       ========================================================================= -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" title="Beranda e-Portofolio">
+        <div class="logo-badge">M</div>
+        <div class="logo-text">
+          <span class="logo-name">Muhammad Iqbal Nugroho, S.Kom.</span>
+          <span class="logo-title">Calon Pendidik Informatika</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#visi" class="nav-link">Visi</a></li>
+          <li><a href="#refleksi" class="nav-link">Refleksi Pembelajaran</a></li>
+          <li><a href="#inovasi" class="nav-link">Karya Inovasi</a></li>
+          <li><a href="#rtl" class="nav-link">Rencana Tindak Lanjut</a></li>
+          <li><a href="#arsip" class="nav-link">Arsip Dokumen</a></li>
+          <li><a href="admin/login.php" class="nav-link" style="color: var(--primary); font-weight: 700;">⚙️ Panel Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="navbar-actions">
+        <!-- Presenter Mode Toggle -->
+        <button id="presenterToggleBtn" class="btn-presenter-toggle"
+          title="Mulai Mode Presentasi Seminar (Shortcut: Tombol P)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+          <span>Mode Seminar</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggleBtn" class="btn-icon" title="Ganti Tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" class="btn-icon mobile-menu-btn" title="Menu Navigasi">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION (PUSAT PERHATIAN UTAMA)
+       ========================================================================= -->
+  <section id="hero" class="section hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Seminar Portofolio PPG Prajabatan</span>
+          </div>
+
+          <h1 class="hero-title">
+            Muhammad Iqbal Nugroho, <span class="gradient-text">S.Kom.</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            Calon Pendidik Informatika Profesional (Iqbal) • Inovator Pembelajaran Digital
+          </div>
+
+          <div class="hero-quote-box">
+            <p>
+              "Mendidik di era komputasi bukan sekadar mengajarkan baris kode, melainkan menuntun kodrat zaman peserta
+              didik agar berdaya nalar kritis, adaptif, dan beretika digital berlandaskan filosofi Ki Hadjar Dewantara."
+            </p>
+            <span class="quote-author">— Muhammad Iqbal Nugroho, S.Kom. (Panggilan: Iqbal)</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#visi" class="btn btn-primary">
+              <span>Mulai Jelajahi Portofolio</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#inovasi" class="btn btn-secondary">
+              <span>Lihat Karya Inovasi</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Highlight Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-number">2 <span>Smt</span></div>
+              <div class="metric-label">Masa Studi PPG</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">700+ <span>Jam</span></div>
+              <div class="metric-label">Praktik PPL Nyata</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">4 <span>Karya</span></div>
+              <div class="metric-label">Inovasi Digital</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">100% <span>Siap</span></div>
+              <div class="metric-label">Kelulusan Profesi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Profile -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <!-- Floating Badges -->
+            <div class="floating-pill pill-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Computational Thinking</span>
+            </div>
+            <div class="floating-pill pill-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Kurikulum Merdeka</span>
+            </div>
+
+            <!-- Profile Avatar Vector: Male Educator (Iqbal) -->
+            <div class="profile-img-wrap">
+              <svg class="profile-avatar-svg" viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1e1b4b" />
+                    <stop offset="50%" stop-color="#312e81" />
+                    <stop offset="100%" stop-color="#0f172a" />
+                  </linearGradient>
+                  <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#6366f1" />
+                    <stop offset="100%" stop-color="#06b6d4" />
+                  </linearGradient>
+                  <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1e293b" />
+                    <stop offset="100%" stop-color="#0f172a" />
+                  </linearGradient>
+                  <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0f172a" />
+                    <stop offset="100%" stop-color="#334155" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="440" fill="url(#bgGrad)" rx="20" />
+                
+                <!-- Circuit Board / Tech Background Patterns -->
+                <circle cx="80" cy="80" r="3" fill="#06b6d4" opacity="0.6" />
+                <circle cx="320" cy="120" r="4" fill="#6366f1" opacity="0.6" />
+                <circle cx="100" cy="200" r="3" fill="#8b5cf6" opacity="0.6" />
+                <path d="M80 80 H 120 V 140 H 180" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+                <path d="M320 120 V 180 H 260 V 220" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+
+                <!-- Glowing Halo -->
+                <circle cx="200" cy="180" r="100" fill="url(#accentGrad)" opacity="0.25" filter="blur(25px)" />
+
+                <!-- Professional Male Educator Silhouette -->
+                <!-- Hair (Short Modern Male Style) -->
+                <path d="M145 155 C140 100, 260 100, 255 155 C255 125, 235 110, 200 110 C165 110, 145 125, 145 155 Z" fill="url(#hairGrad)" />
+                <path d="M140 160 C135 130, 160 115, 200 112 C240 115, 265 130, 260 160 C265 140, 255 120, 200 118 C145 120, 135 140, 140 160 Z" fill="#1e293b" />
+
+                <!-- Face Oval & Neck -->
+                <path d="M175 220 L175 260 L225 260 L225 220 Z" fill="#fcd34d" opacity="0.9" />
+                <ellipse cx="200" cy="175" rx="42" ry="48" fill="#fef3c7" />
+
+                <!-- Eyebrows -->
+                <path d="M170 152 Q182 147 194 152" stroke="#1e293b" stroke-width="3" stroke-linecap="round" fill="none" />
+                <path d="M206 152 Q218 147 230 152" stroke="#1e293b" stroke-width="3" stroke-linecap="round" fill="none" />
+
+                <!-- Eyes & Smart Glasses -->
+                <rect x="168" y="158" width="26" height="18" rx="5" fill="none" stroke="#1e293b" stroke-width="2.5" />
+                <rect x="206" y="158" width="26" height="18" rx="5" fill="none" stroke="#1e293b" stroke-width="2.5" />
+                <line x1="194" y1="167" x2="206" y2="167" stroke="#1e293b" stroke-width="2.5" />
+                <circle cx="181" cy="167" r="3" fill="#0284c7" />
+                <circle cx="219" cy="167" r="3" fill="#0284c7" />
+
+                <!-- Nose -->
+                <path d="M200 168 V182 H196" stroke="#d97706" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+                <!-- Friendly Smile -->
+                <path d="M188 196 Q200 206 212 196" stroke="#b45309" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+                <!-- Formal Educator Suit / Blazer & Tie -->
+                <path d="M120 380 L160 260 L200 290 L240 260 L280 380 Z" fill="#ffffff" />
+                <!-- Dark Navy Tie -->
+                <polygon points="196,260 204,260 208,340 200,355 192,340" fill="#6366f1" />
+                <polygon points="194,258 206,258 204,272 196,272" fill="#4f46e5" />
+                <!-- Blazer -->
+                <path d="M100 440 L125 310 L165 260 L200 310 L235 260 L275 310 L300 440 Z" fill="url(#suitGrad)" />
+
+                <!-- ID Badge Lanyard -->
+                <path d="M175 260 L185 360 H215 L225 260" stroke="#06b6d4" stroke-width="2" stroke-dasharray="6 3" />
+                <rect x="186" y="360" width="28" height="38" rx="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+                <circle cx="200" cy="372" r="5" fill="#6366f1" />
+                <rect x="191" y="382" width="18" height="3" rx="1.5" fill="#ffffff" />
+                <rect x="193" y="388" width="14" height="2.5" rx="1" fill="#94a3b8" />
+              </svg>
+            </div>
+
+            <!-- Profile Status Card -->
+            <div class="profile-status-badge">
+              <div class="status-info">
+                <h4>Muhammad Iqbal Nugroho, S.Kom.</h4>
+                <p>NIM PPG: 2301092048 • Panggilan: Iqbal</p>
+              </div>
+              <div class="badge-category"
+                style="color: var(--success); background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3);">
+                Siap Sertifikasi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. BAGIAN VISI PENDIDIK & IDENTITAS DIRI
+       ========================================================================= -->
+  <section id="visi" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+          <span>Pondasi Filosofis & Pedagogik</span>
+        </div>
+        <h2 class="section-title">Visi Pendidik & <span class="gradient-text">Identitas Diri</span></h2>
+        <p class="section-desc">Menyelaraskan amanat filosofi Ki Hadjar Dewantara dengan tuntutan kecakapan abad ke-21
+          dalam mewujudkan pembelajaran komputasi yang humanis dan bermakna.</p>
+      </div>
+
+      <div class="vision-grid">
+        <!-- Vision 1: Visi untuk Pendidikan di Indonesia -->
+        <div class="vision-card">
+          <div class="vision-card-header">
+            <div class="vision-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="vision-card-title">Visi untuk Pendidikan di Indonesia</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Ekosistem Inklusif & Kemerdekaan Belajar</p>
+            </div>
+          </div>
+
+          <p style="color: var(--text-muted); line-height: 1.75; font-size: 0.95rem;">
+            Mewujudkan ekosistem pendidikan Indonesia yang inklusif, adaptif terhadap perkembangan teknologi, dan berpusat pada kemerdekaan peserta didik. Pendidikan nasional harus menjadi ruang di mana nilai-nilai luhur kemanusiaan berjalan selaras dengan tuntutan kodrat zaman, memfasilitasi tumbuhnya generasi yang mandiri, bernalar kritis, dan memiliki <em>growth mindset</em> untuk terus berinovasi dan belajar sepanjang hayat.
+          </p>
+
+          <div class="vision-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon">✓</div>
+              <div class="pillar-text">
+                <h5>Nilai Kemanusiaan & Kodrat Zaman</h5>
+                <p>Menyelaraskan nilai-nilai luhur budi pekerti dengan kecakapan era komputasi dan teknologi masa depan.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">✓</div>
+              <div class="pillar-text">
+                <h5>Kemandirian & Growth Mindset</h5>
+                <p>Memfasilitasi peserta didik agar tangguh, bernalar kritis, dan adaptif sebagai pembelajar sepanjang hayat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision 2: Visi sebagai Calon Guru -->
+        <div class="vision-card">
+          <div class="vision-card-header">
+            <div class="vision-icon-box secondary">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="vision-card-title">Visi sebagai Calon Guru</h3>
+              <p style="color: var(--secondary); font-size: 0.875rem;">Fasilitator Logika & Pembelajaran Bermakna</p>
+            </div>
+          </div>
+
+          <p style="color: var(--text-muted); line-height: 1.75; font-size: 0.95rem;">
+            Menjadi fasilitator pembelajaran Informatika yang tidak sekadar mentransfer keterampilan teknis komputasi, melainkan menuntun peserta didik dalam mengembangkan logika berpikir dan kemampuan pemecahan masalah. Berkomitmen menghadirkan pengalaman belajar yang bermakna dan memanusiakan manusia, serta membangun ruang kelas yang aman bagi siswa untuk mengeksplorasi ide, berbuat salah, dan berkembang secara utuh sesuai dengan potensinya.
+          </p>
+
+          <div class="vision-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon" style="color: var(--secondary);">✓</div>
+              <div class="pillar-text">
+                <h5>Menuntun Logika & Pemecahan Masalah</h5>
+                <p>Mengasah nalar komputasi mendalam ketimbang sekadar menghafal sintaks atau fungsi software.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon" style="color: var(--secondary);">✓</div>
+              <div class="pillar-text">
+                <h5>Ruang Eksplorasi yang Memanusiakan</h5>
+                <p>Membangun kelas aman yang menghargai proses, terbuka terhadap kesalahan sebagai sarana belajar (*growth mindset*).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Langkah-Langkah Konkret untuk Mencapai Visi -->
+      <div class="vision-steps-container">
+        <div class="vision-steps-header">
+          <div class="section-tag" style="background: rgba(6,182,212,0.12); color: var(--secondary); border-color: rgba(6,182,212,0.25);">
+            <span>Aksi Nyata & Strategi</span>
+          </div>
+          <h3 class="vision-steps-title">Langkah-Langkah Konkret untuk Mencapai Visi</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 680px; margin: 0 auto;">
+            5 Pilar aksi pedagogik yang diterapkan secara konsisten dalam proses pembelajaran Informatika.
+          </p>
+        </div>
+
+        <div class="vision-steps-grid">
+          <!-- Step 1 -->
+          <div class="step-action-card">
+            <div class="step-card-top">
+              <div class="step-card-icon">🎨</div>
+              <div class="step-card-num">01</div>
+            </div>
+            <h4 class="step-card-title">Merancang Pembelajaran Multisensori</h4>
+            <p class="step-card-desc">
+              Mengembangkan modul ajar dan aktivitas kelas yang mengakomodasi gaya belajar beragam melalui integrasi elemen <strong>Somatic, Auditory, Visual,</strong> dan <strong>Intellectual (SAVI)</strong> dalam setiap proyek komputasi.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-action-card">
+            <div class="step-card-top">
+              <div class="step-card-icon" style="background: rgba(6,182,212,0.12); color: var(--secondary); border-color: rgba(6,182,212,0.25);">💡</div>
+              <div class="step-card-num">02</div>
+            </div>
+            <h4 class="step-card-title">Menerapkan <em>Deep Learning</em></h4>
+            <p class="step-card-desc">
+              Membimbing siswa melewati pemahaman permukaan menuju pemikiran tingkat tinggi, memastikan mereka memahami logika dan penerapan konsep teknologi di dunia nyata, bukan hanya menghafal sintaks atau teori.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-action-card">
+            <div class="step-card-top">
+              <div class="step-card-icon" style="background: rgba(139,92,246,0.12); color: var(--accent); border-color: rgba(139,92,246,0.25);">📊</div>
+              <div class="step-card-num">03</div>
+            </div>
+            <h4 class="step-card-title">Mengevaluasi Opini & Umpan Balik Kelas</h4>
+            <p class="step-card-desc">
+              Secara aktif mengumpulkan, menganalisis, dan merefleksikan sentimen serta umpan balik dari peserta didik terkait metode pembelajaran ICT yang diterapkan, guna melakukan perbaikan berkelanjutan pada strategi pedagogik.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-action-card">
+            <div class="step-card-top">
+              <div class="step-card-icon" style="background: rgba(16,185,129,0.12); color: var(--success); border-color: rgba(16,185,129,0.25);">💻</div>
+              <div class="step-card-num">04</div>
+            </div>
+            <h4 class="step-card-title">Mengembangkan Media Digital Mandiri</h4>
+            <p class="step-card-desc">
+              Memanfaatkan keterampilan pengembangan web untuk merancang media pembelajaran interaktif atau portal informasi kelas yang mudah diakses, guna mendukung kemandirian eksplorasi siswa di luar jam sekolah.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-action-card">
+            <div class="step-card-top">
+              <div class="step-card-icon" style="background: rgba(245,158,11,0.12); color: var(--warning); border-color: rgba(245,158,11,0.25);">🏛️</div>
+              <div class="step-card-num">05</div>
+            </div>
+            <h4 class="step-card-title">Menginternalisasi Filosofi KHD</h4>
+            <p class="step-card-desc">
+              Terus menghidupkan semangat Ki Hadjar Dewantara dalam setiap interaksi di kelas, menempatkan diri sebagai <em>pamong</em> yang menuntun arah belajar tanpa merampas hak siswa untuk berpikir mandiri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. RUANG REFLEKSI (INTERACTIVE TIMELINE)
+       ========================================================================= -->
+  <section id="refleksi" class="section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 14 14"></polyline>
+          </svg>
+          <span>Perjalanan Transformatif</span>
+        </div>
+        <h2 class="section-title">Ruang Refleksi <span class="gradient-text">Pembelajaran</span></h2>
+        <p class="section-desc">Garis waktu refleksi kritis perjalanan PPG dari pendalaman teori pedagogik hingga
+          pembuktian lapangan di sekolah mitra.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <!-- Milestone 1: Semester I -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" data-stage="sem1">
+            <div class="timeline-badge badge-sem1">Semester I • Teori & Filosofi</div>
+            <h3 class="timeline-card-title">Fondasi Pedagogik & Pergeseran Paradigma</h3>
+            <p class="timeline-card-desc">
+              Mempelajari Filosofi Ki Hadjar Dewantara, Pemahaman Peserta Didik, dan Asesmen I. Terjadi momen
+              <em>"Aha!"</em> yang mengubah pandangan saya: guru hebat bukan yang paling jago coding, melainkan yang
+              mampu memfasilitasi setiap siswa menemukan logikanya sendiri.
+            </p>
+            <div class="timeline-card-footer">
+              <span>Klik untuk Refleksi Lengkap (4F)</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <div class="refleksi-archive-btn-group">
+              <button class="btn-refleksi-archive" data-category="jurnal" data-doc-id="doc-1" title="Lihat Jurnal Refleksi di Arsip Dokumen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>📂 Buka Dokumen di Arsip (Jurnal Sem I) →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Semester II -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" data-stage="sem2">
+            <div class="timeline-badge badge-sem2">Semester II • PPL Nyata</div>
+            <h3 class="timeline-card-title">Praktik Lapangan, Tantangan Kelas & Modul Digital</h3>
+            <p class="timeline-card-desc">
+              Menghadapi 700+ jam PPL di sekolah mitra dengan kesenjangan literasi digital siswa yang ekstrem.
+              Mengimplementasikan media <em>CodeLearn Hub</em> dan modul ajar tiering bertingkat untuk mengatasi
+              kecemasan koding (*coding anxiety*).
+            </p>
+            <div class="timeline-card-footer">
+              <span>Klik untuk Evaluasi Pembelajaran & Solusi</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <div class="refleksi-archive-btn-group">
+              <button class="btn-refleksi-archive" data-category="ppl" data-doc-id="doc-3" title="Lihat Laporan PPL di Arsip Dokumen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>📂 Buka Dokumen di Arsip (Laporan PPL II) →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3: Sintesis Transformasi -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" data-stage="trans">
+            <div class="timeline-badge badge-trans">Sintesis • Guru Profesional</div>
+            <h3 class="timeline-card-title">Transformasi Menjadi Guru Profesional Humanis</h3>
+            <p class="timeline-card-desc">
+              Sintesis menyeluruh dari kompetensi Pedagogik, Kepribadian, Sosial, dan Profesional. Menjadikan ruang
+              kelas sebagai laboratorium eksplorasi yang aman dari rasa takut salah dan kaya akan refleksi bermakna.
+            </p>
+            <div class="timeline-card-footer">
+              <span>Klik untuk Komitmen & Kode Etik Mengajar</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <div class="refleksi-archive-btn-group">
+              <button class="btn-refleksi-archive" data-category="ptk" data-doc-id="doc-5" title="Lihat Dokumen RTL di Arsip Dokumen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>📂 Buka Dokumen di Arsip (Dokumen RTL) →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Synthesis Highlight Box & Quick Link to Archive -->
+      <div class="reflection-highlight-box">
+        <div class="highlight-quote-icon">“</div>
+        <div class="highlight-content">
+          <h4>Sintesis Transformasi Diri (Refleksi Model Gibbs)</h4>
+          <p>
+            "Pengalaman selama PPG membuktikan bahwa teknologi dalam pembelajaran hanyalah alat akselerasi (*lever*).
+            Hati dari keberhasilan pengajaran tetap terletak pada empati pendidik dalam memahami keunikan tiap anak,
+            mendengarkan kebingungan mereka, dan membimbing mereka dengan kesabaran tiada henti."
+          </p>
+        </div>
+      </div>
+
+      <!-- Section CTA to Archive -->
+      <div style="text-align: center; margin-top: 24px;">
+        <a href="#arsip" class="btn btn-secondary btn-sm" id="btnAllRefleksiArchive">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Jelajahi Seluruh Berkas Refleksi & Laporan di Gudang Arsip Dokumen →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. GALERI KARYA INOVASI PENDIDIKAN
+       ========================================================================= -->
+  <section id="inovasi" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
+          <span>Portofolio Karya Unggulan</span>
+        </div>
+        <h2 class="section-title">Galeri Karya <span class="gradient-text">Inovasi Pendidikan</span></h2>
+        <p class="section-desc">Media pembelajaran interaktif, modul ajar digital, dan instrumen evaluasi yang dirancang
+          dan diuji coba selama masa studi PPG.</p>
+      </div>
+
+      <!-- Gallery Filters -->
+      <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Semua Karya</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Aplikasi</button>
+          <button class="filter-btn" data-filter="modul">Modul Ajar</button>
+          <button class="filter-btn" data-filter="evaluasi">Gamifikasi &amp; Asesmen</button>
+          <button id="openAddInovasiModalBtn" class="btn-add-inovasi-client" title="Tambah Karya Inovasi Baru">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Tambah Karya</span>
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+        <!-- Project 1: CodeLearn Hub -->
+        <div class="innovation-card" data-category="web" data-project="proj-codelearn">
+          <div class="innovation-preview">
+            <span class="innovation-category-tag">Web Pembelajaran</span>
+            <svg class="innovation-preview-svg" viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="360" height="200" fill="#0f172a" />
+              <!-- Mock IDE Header -->
+              <rect x="20" y="20" width="320" height="160" rx="8" fill="#1e293b" stroke="#334155" />
+              <circle cx="36" cy="36" r="4" fill="#ef4444" />
+              <circle cx="48" cy="36" r="4" fill="#f59e0b" />
+              <circle cx="60" cy="36" r="4" fill="#10b981" />
+              <!-- Code Visual Elements -->
+              <rect x="36" y="55" width="80" height="8" rx="2" fill="#6366f1" />
+              <rect x="125" y="55" width="60" height="8" rx="2" fill="#06b6d4" />
+              <rect x="50" y="75" width="140" height="8" rx="2" fill="#94a3b8" opacity="0.6" />
+              <rect x="50" y="95" width="110" height="8" rx="2" fill="#10b981" opacity="0.8" />
+              <rect x="36" y="115" width="70" height="8" rx="2" fill="#6366f1" />
+              <!-- Gamified Badge Vector -->
+              <circle cx="270" cy="100" r="35" fill="rgba(99,102,241,0.2)" stroke="#6366f1" stroke-width="2" />
+              <polygon points="270,80 276,92 290,94 280,104 282,118 270,111 258,118 260,104 250,94 264,92"
+                fill="#f59e0b" />
+            </svg>
+          </div>
+          <div class="innovation-body">
+            <h3 class="innovation-title">CodeLearn Hub: Web Gamifikasi Algoritma</h3>
+            <p class="innovation-desc">Platform pembelajaran interaktif berbasis web untuk melatih dasar algoritma &
+              flowchart dengan simulasi visual langkah demi langkah.</p>
+            <div class="innovation-tech-stack">
+              <span class="tech-tag">HTML5 Canvas</span>
+              <span class="tech-tag">Vanilla JS</span>
+              <span class="tech-tag">SAVI Approach</span>
+            </div>
+            <div class="innovation-footer">
+              <span class="link-detail">
+                <span>Lihat Studi Kasus & Demo</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Modul Ajar Berdiferensiasi -->
+        <div class="innovation-card" data-category="modul" data-project="proj-modul">
+          <div class="innovation-preview">
+            <span class="innovation-category-tag">Modul Ajar Digital</span>
+            <svg class="innovation-preview-svg" viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="360" height="200" fill="#0f172a" />
+              <!-- Document Mockup -->
+              <rect x="60" y="25" width="240" height="150" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+              <rect x="80" y="45" width="120" height="12" rx="3" fill="#38bdf8" />
+              <rect x="80" y="70" width="200" height="6" rx="2" fill="#94a3b8" opacity="0.6" />
+              <rect x="80" y="85" width="180" height="6" rx="2" fill="#94a3b8" opacity="0.6" />
+              <rect x="80" y="100" width="190" height="6" rx="2" fill="#94a3b8" opacity="0.6" />
+              <!-- 3 Tier Badges (Novice, Intermediate, Hacker) -->
+              <rect x="80" y="125" width="55" height="18" rx="4" fill="rgba(16,185,129,0.3)" />
+              <rect x="145" y="125" width="65" height="18" rx="4" fill="rgba(6,182,212,0.3)" />
+              <rect x="220" y="125" width="55" height="18" rx="4" fill="rgba(139,92,246,0.3)" />
+            </svg>
+          </div>
+          <div class="innovation-body">
+            <h3 class="innovation-title">Modul Ajar Berdiferensiasi Informatika Fase E</h3>
+            <p class="innovation-desc">Perangkat ajar komprehensif terintegrasi Profil Pelajar Pancasila dengan 3
+              tingkatan tantangan (*tiering*) untuk keberagaman kesiapan siswa.</p>
+            <div class="innovation-tech-stack">
+              <span class="tech-tag">Kurikulum Merdeka</span>
+              <span class="tech-tag">LKPD Interaktif</span>
+              <span class="tech-tag">Asesmen Diagnostik</span>
+            </div>
+            <div class="innovation-footer">
+              <span class="link-detail">
+                <span>Lihat Studi Kasus & Demo</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: LogiQuest -->
+        <div class="innovation-card" data-category="evaluasi" data-project="proj-logiquest">
+          <div class="innovation-preview">
+            <span class="innovation-category-tag">Gamifikasi & Evaluasi</span>
+            <svg class="innovation-preview-svg" viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="360" height="200" fill="#0f172a" />
+              <!-- Puzzle / Logic Network Graphic -->
+              <circle cx="100" cy="80" r="22" fill="#8b5cf6" opacity="0.8" />
+              <circle cx="260" cy="80" r="22" fill="#06b6d4" opacity="0.8" />
+              <circle cx="180" cy="140" r="26" fill="#6366f1" />
+              <!-- Connectors -->
+              <line x1="100" y1="80" x2="180" y2="140" stroke="#a78bfa" stroke-width="3" stroke-dasharray="4 4" />
+              <line x1="260" y1="80" x2="180" y2="140" stroke="#67e8f9" stroke-width="3" stroke-dasharray="4 4" />
+              <!-- Icons inside nodes -->
+              <text x="94" y="86" fill="white" font-size="16" font-weight="bold">1</text>
+              <text x="254" y="86" fill="white" font-size="16" font-weight="bold">0</text>
+              <text x="174" y="146" fill="white" font-size="18" font-weight="bold">&amp;</text>
+            </svg>
+          </div>
+          <div class="innovation-body">
+            <h3 class="innovation-title">LogiQuest: Simulator Berpikir Komputasional</h3>
+            <p class="innovation-desc">Aplikasi teka-teki logika Bebras dan simulasi gerbang logika yang mengasah 4
+              pilar Computational Thinking secara menyenangkan.</p>
+            <div class="innovation-tech-stack">
+              <span class="tech-tag">Computational Thinking</span>
+              <span class="tech-tag">Web Audio API</span>
+              <span class="tech-tag">SVG Logic Nodes</span>
+            </div>
+            <div class="innovation-footer">
+              <span class="link-detail">
+                <span>Lihat Studi Kasus & Demo</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Dashboard Asesmen Real-Time -->
+        <div class="innovation-card" data-category="web" data-project="proj-dashboard">
+          <div class="innovation-preview">
+            <span class="innovation-category-tag">Web & Analitik</span>
+            <svg class="innovation-preview-svg" viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="360" height="200" fill="#0f172a" />
+              <!-- Dashboard Charts Mock -->
+              <rect x="30" y="30" width="300" height="140" rx="8" fill="#1e293b" stroke="#334155" />
+              <!-- Bar Chart -->
+              <rect x="60" y="110" width="20" height="45" rx="3" fill="#6366f1" />
+              <rect x="95" y="85" width="20" height="70" rx="3" fill="#06b6d4" />
+              <rect x="130" y="70" width="20" height="85" rx="3" fill="#10b981" />
+              <rect x="165" y="95" width="20" height="60" rx="3" fill="#f59e0b" />
+              <!-- Trend Line -->
+              <path d="M210 130 Q240 70 280 60" stroke="#ec4899" stroke-width="3" fill="none" />
+              <circle cx="280" cy="60" r="5" fill="#ec4899" />
+            </svg>
+          </div>
+          <div class="innovation-body">
+            <h3 class="innovation-title">Dashboard Evaluasi Asesmen Formatif Real-Time</h3>
+            <p class="innovation-desc">Alat evaluasi diagnostik dan formatif instan untuk mendeteksi miskonsepsi siswa
+              per Tujuan Pembelajaran secara langsung di kelas.</p>
+            <div class="innovation-tech-stack">
+              <span class="tech-tag">Data Visualisasi</span>
+              <span class="tech-tag">Formative Assessment</span>
+              <span class="tech-tag">Analytics</span>
+            </div>
+            <div class="innovation-footer">
+              <span class="link-detail">
+                <span>Lihat Studi Kasus & Demo</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. RENCANA TINDAK LANJUT (RTL ROADMAP)
+       ========================================================================= -->
+  <section id="rtl" class="section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span>Peta Jalan Berkelanjutan</span>
+        </div>
+        <h2 class="section-title">Rencana Tindak <span class="gradient-text">Lanjut (RTL)</span></h2>
+        <p class="section-desc">Komitmen strategis pasca kelulusan PPG untuk terus meningkatkan mutu pembelajaran,
+          memperluas dampak, dan menjadi guru pembelajar.</p>
+      </div>
+
+      <div class="rtl-roadmap">
+        <!-- Phase 1: Jangka Pendek -->
+        <div class="rtl-card">
+          <div class="rtl-phase-badge phase-1">Fase 1 • 0 - 6 Bulan</div>
+          <h3 class="rtl-card-title">Implementasi di Sekolah Penempatan</h3>
+          <div class="rtl-timeline-time">Jangka Pendek (Adaptasi & Fondasi)</div>
+          <ul class="rtl-action-list">
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Melakukan pemetaan diagnostik awal gaya belajar & kompetensi digital peserta didik baru.</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Menerapkan modul ajar digital <em>CodeLearn Hub</em> pada materi Algoritma & Pemrograman Fase
+                E/F.</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Menginisiasi budaya refleksi berkala di akhir setiap siklus pembelajaran.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Phase 2: Jangka Menengah -->
+        <div class="rtl-card">
+          <div class="rtl-phase-badge phase-2">Fase 2 • 6 - 18 Bulan</div>
+          <h3 class="rtl-card-title">Kolaborasi & Berbagi Praktik Baik</h3>
+          <div class="rtl-timeline-time">Jangka Menengah (Pengembangan Jejaring)</div>
+          <ul class="rtl-action-list">
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Mendirikan dan menggerakkan Komunitas Belajar (Kombel) Guru Informatika di tingkat MGMP
+                sekolah/kabupaten.</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Membimbing ekstrakurikuler komputasi & tim olimpiade informatika / lomba web desain sekolah.</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Mempublikasikan modul ajar terbuka pada Platform Merdeka Mengajar (PMM).</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Phase 3: Jangka Panjang -->
+        <div class="rtl-card">
+          <div class="rtl-phase-badge phase-3">Fase 3 • 2 - 5 Tahun</div>
+          <h3 class="rtl-card-title">Inovasi Berkelanjutan & PTK</h3>
+          <div class="rtl-timeline-time">Jangka Panjang (Kepemimpinan Pedagogik)</div>
+          <ul class="rtl-action-list">
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Melaksanakan Penelitian Tindakan Kelas (PTK) berkala untuk memvalidasi efektivitas AI dalam
+                pedagogi.</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Mengambil sertifikasi keahlian teknologi pendidikan tingkat internasional (Google Certified
+                Educator).</span>
+            </li>
+            <li class="rtl-action-item">
+              <span class="check-icon">✓</span>
+              <span>Berkontribusi aktif sebagai Guru Penggerak dan narasumber praktik baik nasional.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. GUDANG ARSIP DOKUMEN (REPOSITORY)
+       ========================================================================= -->
+  <section id="arsip" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Standar Penilaian Portofolio</span>
+        </div>
+        <h2 class="section-title">Gudang Arsip <span class="gradient-text">& Bukti Unggah</span></h2>
+        <p class="section-desc">Kumpulan dokumen otentik, perangkat pembelajaran, laporan praktik, dan bukti karya yang telah divalidasi oleh pembimbing PPG.</p>
+        <div class="repo-storage-badge" id="repoStorageStatusBadge" title="Sistem penyimpanan lokal IndexedDB aktif untuk menyimpan berkas ukuran penuh secara offline">
+          <span class="storage-status-dot"></span>
+          <span id="repoStorageStatusText">Penyimpanan Berkas Offline Aktif (IndexedDB)</span>
+        </div>
+      </div>
+
+      <!-- Controls: Search, Upload Button & Category Pills -->
+      <div class="repo-controls">
+        <div class="repo-search-group">
+          <div class="repo-search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="repoSearchInput" placeholder="Cari nama dokumen atau materi...">
+          </div>
+          <button id="openUploadModalBtn" class="btn-upload-trigger" title="Unggah Berkas / Dokumen Portofolio Baru">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <span>Unggah Dokumen</span>
+          </button>
+          <button id="resetDocsBtn" class="btn-reset-docs" title="Kembalikan daftar dokumen ke berkas standar PPG">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 4v6h-6"></path>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+            <span>Reset Dokumen</span>
+          </button>
+        </div>
+
+        <div class="repo-tags">
+          <button class="repo-tag-btn active" data-tag="all">Semua</button>
+          <button class="repo-tag-btn" data-tag="jurnal">Jurnal Refleksi</button>
+          <button class="repo-tag-btn" data-tag="modul">Modul & Perangkat</button>
+          <button class="repo-tag-btn" data-tag="ppl">Laporan PPL</button>
+          <button class="repo-tag-btn" data-tag="ptk">PTK & RTL</button>
+          <button class="repo-tag-btn" data-tag="tambahan">Karya Tambahan</button>
+        </div>
+      </div>
+
+      <!-- Document Table Card -->
+      <div class="repo-table-card">
+        <table class="repo-table">
+          <thead>
+            <tr>
+              <th>Dokumen / Bukti</th>
+              <th>Kategori</th>
+              <th>Format & Ukuran</th>
+              <th>Status Validasi</th>
+              <th style="text-align: right;">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="repoTableBody">
+            <!-- Row 1 -->
+            <tr class="repo-row" data-category="jurnal">
+              <td>
+                <div class="doc-info">
+                  <div class="doc-icon">📄</div>
+                  <div class="doc-title-box">
+                    <h5>Jurnal Refleksi Kritis Semester I & II (Model Gibbs & 4F)</h5>
+                    <p>Dokumentasi perjalanan mingguan, evaluasi perkuliahan, dan refleksi diri.</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge-category">Jurnal Refleksi</span></td>
+              <td style="color: var(--text-muted);">PDF • 2.8 MB</td>
+              <td><span style="color: var(--success); font-weight: 700;">✓ Terverifikasi</span></td>
+              <td>
+                <div class="doc-actions" style="justify-content: flex-end;">
+                  <button class="btn btn-secondary btn-sm btn-preview-doc" data-doc-name="Jurnal Refleksi Kritis PPG"
+                    data-doc-cat="Jurnal Refleksi">Pratinjau</button>
+                  <button class="btn btn-primary btn-sm btn-download-doc"
+                    data-doc-name="Jurnal Refleksi Kritis PPG">Unduh</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr class="repo-row" data-category="modul">
+              <td>
+                <div class="doc-info">
+                  <div class="doc-icon">📘</div>
+                  <div class="doc-title-box">
+                    <h5>Modul Ajar Berdiferensiasi Informatika Fase E (Lengkap dengan LKPD)</h5>
+                    <p>Perangkat ajar 3 siklus: ATP, CP, Rubrik Asesmen Diagnostik & Formatif.</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge-category">Modul & Perangkat</span></td>
+              <td style="color: var(--text-muted);">PDF • 4.5 MB</td>
+              <td><span style="color: var(--success); font-weight: 700;">✓ Terverifikasi</span></td>
+              <td>
+                <div class="doc-actions" style="justify-content: flex-end;">
+                  <button class="btn btn-secondary btn-sm btn-preview-doc"
+                    data-doc-name="Modul Ajar Berdiferensiasi Fase E"
+                    data-doc-cat="Modul & Perangkat">Pratinjau</button>
+                  <button class="btn btn-primary btn-sm btn-download-doc"
+                    data-doc-name="Modul Ajar Berdiferensiasi Fase E">Unduh</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr class="repo-row" data-category="ppl">
+              <td>
+                <div class="doc-info">
+                  <div class="doc-icon">🏫</div>
+                  <div class="doc-title-box">
+                    <h5>Laporan Akhir Praktik Pengalaman Lapangan (PPL I & PPL II)</h5>
+                    <p>Laporan komprehensif 700 jam mengajar mandiri di sekolah mitra penugasan.</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge-category">Laporan PPL</span></td>
+              <td style="color: var(--text-muted);">PDF • 6.2 MB</td>
+              <td><span style="color: var(--success); font-weight: 700;">✓ Disetujui DPL</span></td>
+              <td>
+                <div class="doc-actions" style="justify-content: flex-end;">
+                  <button class="btn btn-secondary btn-sm btn-preview-doc" data-doc-name="Laporan Akhir PPL I dan II"
+                    data-doc-cat="Laporan PPL">Pratinjau</button>
+                  <button class="btn btn-primary btn-sm btn-download-doc"
+                    data-doc-name="Laporan Akhir PPL I dan II">Unduh</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr class="repo-row" data-category="ptk">
+              <td>
+                <div class="doc-info">
+                  <div class="doc-icon">📊</div>
+                  <div class="doc-title-box">
+                    <h5>Laporan Penelitian Tindakan Kelas (PTK): Gamifikasi Algoritma</h5>
+                    <p>Studi peningkatan nalar komputasi siswa melalui media CodeLearn Hub.</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge-category">PTK & RTL</span></td>
+              <td style="color: var(--text-muted);">PDF • 3.4 MB</td>
+              <td><span style="color: var(--success); font-weight: 700;">✓ Terverifikasi</span></td>
+              <td>
+                <div class="doc-actions" style="justify-content: flex-end;">
+                  <button class="btn btn-secondary btn-sm btn-preview-doc"
+                    data-doc-name="Laporan PTK Gamifikasi Algoritma" data-doc-cat="PTK & RTL">Pratinjau</button>
+                  <button class="btn btn-primary btn-sm btn-download-doc"
+                    data-doc-name="Laporan PTK Gamifikasi Algoritma">Unduh</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr class="repo-row" data-category="ptk">
+              <td>
+                <div class="doc-info">
+                  <div class="doc-icon">🚀</div>
+                  <div class="doc-title-box">
+                    <h5>Dokumen Rencana Tindak Lanjut (RTL) Guru Profesional Lengkap</h5>
+                    <p>Matriks program kerja, timeline implementasi, dan target pengembangan keprofesian.</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge-category">PTK & RTL</span></td>
+              <td style="color: var(--text-muted);">PDF • 1.9 MB</td>
+              <td><span style="color: var(--success); font-weight: 700;">✓ Final</span></td>
+              <td>
+                <div class="doc-actions" style="justify-content: flex-end;">
+                  <button class="btn btn-secondary btn-sm btn-preview-doc" data-doc-name="Dokumen RTL Guru Profesional"
+                    data-doc-cat="PTK & RTL">Pratinjau</button>
+                  <button class="btn btn-primary btn-sm btn-download-doc"
+                    data-doc-name="Dokumen RTL Guru Profesional">Unduh</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand / Thanks Column -->
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="logo-badge">M</div>
+            <div class="logo-text">
+              <span class="logo-name">Muhammad Iqbal Nugroho, S.Kom.</span>
+              <span class="logo-title">Calon Pendidik Informatika</span>
+            </div>
+          </div>
+          <p>
+            Terima kasih atas bimbingan para Dosen Pembimbing Lapangan, Guru Pamong, serta rekan sejawat mahasiswa PPG.
+            Komitmen saya adalah terus mengabdi demi kemajuan pendidikan komputasi Indonesia.
+          </p>
+          <div class="footer-socials">
+            <a href="mailto:iqbalnugroho073@gmail.com" class="social-btn" title="Kirim Surel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="social-btn" title="Profil LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" class="social-btn" title="GitHub Repository">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Navigasi Canvas</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Pusat Perhatian (Hero)</a></li>
+            <li><a href="#visi">Visi Pendidik & Filosofi</a></li>
+            <li><a href="#refleksi">Ruang Refleksi Kritis</a></li>
+            <li><a href="#inovasi">Galeri Karya Inovasi</a></li>
+            <li><a href="#rtl">Rencana Tindak Lanjut</a></li>
+            <li><a href="#arsip">Arsip & Bukti Unggah</a></li>
+          </ul>
+        </div>
+
+        <!-- Seminar Presentation Tips -->
+        <div class="footer-col">
+          <h5>Pintasan Seminar</h5>
+          <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; margin-bottom: 12px;">
+            Gunakan tombol panah keyboard saat mempresentasikan halaman:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 6px; font-size: 0.8rem; color: var(--text-muted);">
+            <div><kbd
+                style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary);">↓</kbd>
+              / <kbd
+                style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary);">Space</kbd>
+              : Slide Selanjutnya</div>
+            <div><kbd
+                style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary);">↑</kbd>
+              : Slide Sebelumnya</div>
+            <div><kbd
+                style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary);">P</kbd>
+              : Toggle Mode Seminar</div>
+            <div><kbd
+                style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary);">Esc</kbd>
+              : Tutup Modal / Keluar</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 Muhammad Iqbal Nugroho, S.Kom. • e-Portofolio Seminar PPG Informatika. Seluruh hak cipta dilindungi.
+        </div>
+        <div>Dibuat dengan dedikasi untuk kemajuan Pendidikan Indonesia 🇮🇩</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING SEMINAR PRESENTER HUD (BAR KONTROL SLIDE)
+       ========================================================================= -->
+  <div id="presenterHud" class="presenter-hud">
+    <div class="hud-slide-indicator">
+      <span>Slide</span>
+      <span id="hudSlideCurrent">1</span> / <span id="hudSlideTotal">7</span>
+    </div>
+    <div class="hud-divider"></div>
+    <div class="hud-controls">
+      <button id="hudPrevBtn" class="hud-btn" title="Slide Sebelumnya (Panah Atas)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+      <button id="hudNextBtn" class="hud-btn" title="Slide Selanjutnya (Panah Bawah)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+    <div class="hud-divider"></div>
+    <button id="hudCloseBtn" class="hud-close-btn" title="Keluar dari Mode Presenter">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       DYNAMIC MODAL DIALOG (DETAIL & PREVIEW)
+       ========================================================================= -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="modalTitle">Judul Modal</h3>
+          <p id="modalSubtitle">Subjudul Penjelasan</p>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div id="modalContent" class="modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm"
+          onclick="document.getElementById('modalBackdrop').classList.remove('open'); document.body.style.overflow='';">Tutup</button>
+        <button id="modalActionBtn" class="btn btn-primary btn-sm">Aksi Utama</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       UPLOAD DOKUMEN MODAL DIALOG
+       ========================================================================= -->
+  <div id="uploadModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 640px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Unggah Dokumen Portofolio</h3>
+          <p>Tambahkan berkas bukti karya, jurnal, modul, atau sertifikat baru</p>
+        </div>
+        <button id="uploadModalCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="uploadDocForm">
+        <div class="modal-body">
+          <!-- Drag & Drop Zone -->
+          <div class="upload-dropzone" id="uploadDropzone">
+            <div class="dropzone-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <div class="dropzone-title">Tarik & Lepas Berkas ke Sini</div>
+            <div class="dropzone-subtext">atau klik untuk memilih berkas dari komputer (PDF, DOCX, PPTX, ZIP, gambar maks 25MB)</div>
+            <input type="file" id="docFileInput" style="display: none;" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.zip,.rar,.png,.jpg,.jpeg">
+            
+            <!-- File Info Pill -->
+            <div id="selectedFileInfo" class="selected-file-info">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.3rem;">📄</span>
+                <div>
+                  <div id="selectedFileName" style="font-weight: 700; font-size: 0.9rem; color: var(--text-main);">nama_berkas.pdf</div>
+                  <div id="selectedFileSize" style="font-size: 0.75rem; color: var(--text-muted);">2.4 MB</div>
+                </div>
+              </div>
+              <button type="button" id="removeSelectedFileBtn" style="background: none; border: none; color: var(--danger); cursor: pointer; font-size: 1.1rem;" title="Hapus Berkas Terpilih">✕</button>
+            </div>
+          </div>
+
+          <!-- Form Fields -->
+          <div class="form-group">
+            <label class="form-label" for="uploadDocTitle">Judul Dokumen / Nama Karya <span style="color: var(--danger);">*</span></label>
+            <input type="text" id="uploadDocTitle" class="form-input" placeholder="Contoh: Modul Ajar Berbasis Proyek (PJBL) Fase F" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="uploadDocCategory">Kategori Dokumen <span style="color: var(--danger);">*</span></label>
+            <select id="uploadDocCategory" class="form-select" required>
+              <option value="jurnal">Jurnal Refleksi</option>
+              <option value="modul" selected>Modul & Perangkat Pembelajaran</option>
+              <option value="ppl">Laporan PPL</option>
+              <option value="ptk">PTK & Rencana Tindak Lanjut</option>
+              <option value="tambahan">Karya Tambahan / Sertifikat</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="uploadDocDesc">Deskripsi Singkat / Ringkasan Isi</label>
+            <textarea id="uploadDocDesc" class="form-textarea" rows="3" placeholder="Jelaskan ringkasan materi, capaian pembelajaran, atau deskripsi bukti karya ini..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="uploadDocStatus">Status Validasi</label>
+            <select id="uploadDocStatus" class="form-select">
+              <option value="Baru Diunggah">Baru Diunggah (Siap Dinilai)</option>
+              <option value="Terverifikasi Dosen & Pamong">✓ Terverifikasi Dosen & Pamong</option>
+              <option value="Final / Siap Uji">Final Portofolio</option>
+            </select>
+          </div>
+
+          <!-- Upload Progress Animation -->
+          <div id="uploadProgressContainer" class="upload-progress-container">
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-main);">
+              <span id="uploadProgressText">Mengunggah dan memverifikasi berkas...</span>
+              <span id="uploadProgressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div id="uploadProgressBar" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="cancelUploadBtn" class="btn btn-secondary btn-sm">Batal</button>
+          <button type="submit" id="submitUploadBtn" class="btn btn-primary btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <span>Simpan & Tambahkan ke Arsip</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       EDIT DOKUMEN MODAL DIALOG (UPDATE)
+       ========================================================================= -->
+  <div id="editModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 600px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Edit Data Dokumen / Bukti</h3>
+          <p>Perbarui judul, kategori, status validasi, atau ringkasan dokumen</p>
+        </div>
+        <button id="editModalCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="editDocForm">
+        <input type="hidden" id="editDocId">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="editDocTitle">Judul Dokumen / Nama Bukti <span style="color: var(--danger);">*</span></label>
+            <input type="text" id="editDocTitle" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="editDocCategory">Kategori Dokumen <span style="color: var(--danger);">*</span></label>
+            <select id="editDocCategory" class="form-select" required>
+              <option value="jurnal">Jurnal Refleksi</option>
+              <option value="modul">Modul & Perangkat Pembelajaran</option>
+              <option value="ppl">Laporan PPL</option>
+              <option value="ptk">PTK & Rencana Tindak Lanjut</option>
+              <option value="tambahan">Karya Tambahan / Sertifikat</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="editDocDesc">Deskripsi Singkat</label>
+            <textarea id="editDocDesc" class="form-textarea" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="editDocStatus">Status Validasi</label>
+            <select id="editDocStatus" class="form-select">
+              <option value="✓ Terverifikasi">✓ Terverifikasi</option>
+              <option value="✓ Disetujui DPL">✓ Disetujui DPL</option>
+              <option value="✓ Final">✓ Final</option>
+              <option value="Baru Diunggah">Baru Diunggah</option>
+              <option value="Draf / Perlu Revisi">Draf / Perlu Revisi</option>
+            </select>
+          </div>
+
+          <!-- Optional File Replacement Info -->
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+              <label class="form-label" style="margin-bottom: 0;">Berkas Terlampir Saat Ini</label>
+              <button type="button" id="editTriggerReplaceFileBtn" class="btn btn-secondary btn-sm" style="padding: 3px 9px; font-size: 0.75rem;">📁 Ganti Berkas</button>
+            </div>
+            <div id="editCurrentFileInfo" style="display: flex; align-items: center; justify-content: space-between; background: var(--bg-surface-raised); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 0.825rem;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span id="editCurrentFileIcon" style="font-size: 1.1rem;">📄</span>
+                <div>
+                  <div id="editCurrentFileName" style="color: var(--text-main); font-weight: 600;">dokumen.pdf</div>
+                  <div id="editCurrentFileSize" style="color: var(--text-muted); font-size: 0.75rem;">2.5 MB</div>
+                </div>
+              </div>
+              <span id="editStorageTag" style="font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; background: rgba(16, 185, 129, 0.15); color: var(--success); font-weight: 600;">IndexedDB</span>
+            </div>
+            <input type="file" id="editDocFileInput" style="display: none;" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.zip,.rar,.png,.jpg,.jpeg">
+            
+            <div id="editNewSelectedFileInfo" class="selected-file-info" style="margin-top: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">✨</span>
+                <div>
+                  <div id="editNewSelectedFileName" style="font-weight: 700; font-size: 0.85rem; color: var(--text-main);">berkas_pengganti.pdf</div>
+                  <div id="editNewSelectedFileSize" style="font-size: 0.75rem; color: var(--primary);">Berkas baru siap disimpan menggantikan berkas lama</div>
+                </div>
+              </div>
+              <button type="button" id="removeEditSelectedFileBtn" style="background: none; border: none; color: var(--danger); cursor: pointer; font-size: 1.1rem;" title="Batalkan Penggantian Berkas">✕</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="cancelEditBtn" class="btn btn-secondary btn-sm">Batal</button>
+          <button type="submit" id="saveEditDocBtn" class="btn btn-primary btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+            <span>Simpan Perubahan</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       DELETE CONFIRMATION MODAL DIALOG (DELETE)
+       ========================================================================= -->
+  <div id="deleteConfirmModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 480px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 style="color: var(--danger);">Hapus Dokumen Portofolio</h3>
+          <p>Konfirmasi penghapusan berkas dari sistem arsip</p>
+        </div>
+        <button id="deleteConfirmCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" style="text-align: center; padding: 28px 24px;">
+        <div style="width: 56px; height: 56px; margin: 0 auto 16px auto; border-radius: 50%; background: rgba(239, 68, 68, 0.15); color: var(--danger); display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">
+          ⚠️
+        </div>
+        <h4 style="font-size: 1.05rem; margin-bottom: 8px; color: var(--text-main);">Yakin Ingin Menghapus Dokumen Ini?</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 14px;">
+          Dokumen <strong id="deleteDocTitleSpan" style="color: var(--text-main);">[Nama Dokumen]</strong> akan dihapus secara permanen dari sistem arsip portofolio.
+        </p>
+      </div>
+
+      <div class="modal-footer" style="justify-content: center; gap: 12px;">
+        <button type="button" id="cancelDeleteBtn" class="btn btn-secondary btn-sm" style="min-width: 100px;">Batal</button>
+        <button type="button" id="confirmDeleteDocBtn" class="btn btn-sm" style="background: var(--danger); color: white; min-width: 120px;">
+          🗑️ Ya, Hapus Dokumen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TAMBAH KARYA INOVASI MODAL DIALOG (CREATE INOVASI)
+       ========================================================================= -->
+  <div id="addInovasiModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 620px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Tambah Karya Inovasi Pembelajaran 💡</h3>
+          <p>Tambahkan media komputasi, modul, atau proyek gamifikasi baru</p>
+        </div>
+        <button id="addInovasiCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="addInovasiForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="inovasiTitle">Judul Karya Inovasi <span style="color: var(--danger);">*</span></label>
+            <input type="text" id="inovasiTitle" class="form-input" placeholder="Contoh: Media Pembelajaran Interaktif Jaringan Komputer" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div class="form-group">
+              <label class="form-label" for="inovasiCategory">Kategori Karya <span style="color: var(--danger);">*</span></label>
+              <select id="inovasiCategory" class="form-select" required>
+                <option value="web">Web & Aplikasi Pembelajaran</option>
+                <option value="modul">Modul Ajar Digital</option>
+                <option value="evaluasi">Asesmen & Gamifikasi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inovasiIcon">Ikon Emoji</label>
+              <select id="inovasiIcon" class="form-select">
+                <option value="💻">💻 Komputer / Web</option>
+                <option value="📘">📘 Buku / Modul</option>
+                <option value="🎮">🎮 Game / Kuis</option>
+                <option value="📊">📊 Grafik / Analitik</option>
+                <option value="💡">💡 Ide / Inovasi</option>
+                <option value="🤖">🤖 AI / Robotik</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inovasiDesc">Ringkasan / Deskripsi Karya <span style="color: var(--danger);">*</span></label>
+            <textarea id="inovasiDesc" class="form-textarea" rows="2" placeholder="Deskripsikan fungsi dan keunggulan utama media/karya ini..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inovasiProblem">Latar Belakang / Tantangan Kelas</label>
+            <textarea id="inovasiProblem" class="form-textarea" rows="2" placeholder="Kondisi atau masalah belajar siswa yang ingin diatasi..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inovasiSolution">Solusi Inovatif & Pendekatan</label>
+            <textarea id="inovasiSolution" class="form-textarea" rows="2" placeholder="Pendekatan pedagogik atau fitur solutif yang dihadirkan..."></textarea>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div class="form-group">
+              <label class="form-label" for="inovasiTech">Teknologi / Stack</label>
+              <input type="text" id="inovasiTech" class="form-input" placeholder="Contoh: HTML5 Canvas, JS, CSS">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inovasiBadge">Label Badge</label>
+              <input type="text" id="inovasiBadge" class="form-input" placeholder="Contoh: Web Pembelajaran" value="Inovasi Baru">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inovasiImpact">Hasil Uji Coba & Dampak</label>
+            <textarea id="inovasiImpact" class="form-textarea" rows="2" placeholder="Hasil respon siswa atau peningkatan hasil belajar..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="cancelAddInovasiBtn" class="btn btn-secondary btn-sm">Batal</button>
+          <button type="submit" id="saveInovasiBtn" class="btn btn-primary btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+            <span>Simpan ke Galeri</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HAPUS KARYA INOVASI MODAL DIALOG (DELETE INOVASI)
+       ========================================================================= -->
+  <div id="deleteInovasiConfirmModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 460px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 style="color: var(--danger);">Hapus Karya Inovasi</h3>
+          <p>Konfirmasi penghapusan karya dari galeri portofolio</p>
+        </div>
+        <button id="deleteInovasiCloseBtn" class="modal-close-btn" title="Tutup Modal (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" style="text-align: center; padding: 24px 20px;">
+        <div style="width: 52px; height: 52px; margin: 0 auto 14px auto; border-radius: 50%; background: rgba(239, 68, 68, 0.15); color: var(--danger); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+          🗑️
+        </div>
+        <h4 style="font-size: 1.05rem; margin-bottom: 8px; color: var(--text-main);">Yakin Ingin Menghapus Karya Ini?</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+          Proyek <strong id="deleteInovasiTitleSpan" style="color: var(--text-main);">[Nama Karya]</strong> akan dihapus dari galeri karya inovasi portofolio.
+        </p>
+      </div>
+
+      <div class="modal-footer" style="justify-content: center; gap: 12px;">
+        <button type="button" id="cancelDeleteInovasiBtn" class="btn btn-secondary btn-sm">Batal</button>
+        <button type="button" id="confirmDeleteInovasiBtn" class="btn btn-sm" style="background: var(--danger); color: white; min-width: 120px;">
+          Ya, Hapus Karya
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="btn-back-to-top" title="Kembali ke Bagian Atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Engine -->
+  <script src="app.js"></script>
+</body>
+
+</html>
