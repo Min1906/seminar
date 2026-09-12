@@ -43,14 +43,93 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Menu -->
+      <!-- Desktop & Mobile Nav Menu List -->
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#visi" class="nav-link">Visi</a></li>
-          <li><a href="#refleksi" class="nav-link">Refleksi Pembelajaran</a></li>
-          <li><a href="#inovasi" class="nav-link">Karya Inovasi</a></li>
-          <li><a href="#rtl" class="nav-link">Rencana Tindak Lanjut</a></li>
-          <li><a href="#arsip" class="nav-link">Arsip Dokumen</a></li>
+          <li class="nav-menu-header">
+            <span class="nav-menu-title">📋 Navigasi e-Portofolio</span>
+            <span class="nav-menu-badge">Seminar PPG</span>
+          </li>
+          <li class="nav-item">
+            <a href="#visi" class="nav-link">
+              <div class="nav-link-content">
+                <span class="nav-link-icon-box">🎯</span>
+                <div class="nav-link-text-group">
+                  <span class="nav-link-title">Visi &amp; Identitas Diri</span>
+                  <span class="nav-link-sub">Pondasi Filosofis &amp; Pedagogik</span>
+                </div>
+              </div>
+              <span class="nav-link-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#refleksi" class="nav-link">
+              <div class="nav-link-content">
+                <span class="nav-link-icon-box">⏳</span>
+                <div class="nav-link-text-group">
+                  <span class="nav-link-title">Refleksi Pembelajaran</span>
+                  <span class="nav-link-sub">Garis Waktu Refleksi &amp; Berkas LK 2</span>
+                </div>
+              </div>
+              <span class="nav-link-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#inovasi" class="nav-link">
+              <div class="nav-link-content">
+                <span class="nav-link-icon-box">💡</span>
+                <div class="nav-link-text-group">
+                  <span class="nav-link-title">Karya Inovasi</span>
+                  <span class="nav-link-sub">Media Digital &amp; Modul Ajar</span>
+                </div>
+              </div>
+              <span class="nav-link-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#rtl" class="nav-link">
+              <div class="nav-link-content">
+                <span class="nav-link-icon-box">🚀</span>
+                <div class="nav-link-text-group">
+                  <span class="nav-link-title">Rencana Tindak Lanjut (RTL)</span>
+                  <span class="nav-link-sub">Peta Jalan Pasca Kelulusan PPG</span>
+                </div>
+              </div>
+              <span class="nav-link-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#arsip" class="nav-link">
+              <div class="nav-link-content">
+                <span class="nav-link-icon-box">📂</span>
+                <div class="nav-link-text-group">
+                  <span class="nav-link-title">Arsip Dokumen</span>
+                  <span class="nav-link-sub">Gudang Berkas &amp; Bukti Unggah</span>
+                </div>
+              </div>
+              <span class="nav-link-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -85,12 +164,17 @@
         </button>
 
         <!-- Mobile Hamburger Button -->
-        <button id="mobileMenuBtn" class="btn-icon mobile-menu-btn" title="Menu Navigasi">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <button id="mobileMenuBtn" class="btn-icon mobile-menu-btn" title="Menu Navigasi" aria-label="Buka Menu Navigasi">
+          <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
       </div>
@@ -166,22 +250,6 @@
         <!-- Right Visual Profile -->
         <div class="hero-visual">
           <div class="profile-card">
-            <!-- Floating Badges -->
-            <div class="floating-pill pill-1">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              <span>Computational Thinking</span>
-            </div>
-            <div class="floating-pill pill-2">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-              <span>Kurikulum Merdeka</span>
-            </div>
-
             <!-- Profile Photo: Muhammad Iqbal Nugroho, S.Kom. -->
             <div class="profile-img-wrap">
               <img src="foto.jpg" alt="Foto Profil Muhammad Iqbal Nugroho, S.Kom." class="profile-photo-img">
@@ -192,10 +260,6 @@
               <div class="status-info">
                 <h4>Muhammad Iqbal Nugroho, S.Kom.</h4>
                 <p>NIM PPG: 2301092048 • Panggilan: Iqbal</p>
-              </div>
-              <div class="badge-category"
-                style="color: var(--success); background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3);">
-                Siap Sertifikasi
               </div>
             </div>
           </div>
