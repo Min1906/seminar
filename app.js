@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Automatically close mobile menu on screen resize to desktop
+    // Automatically close mobile menu on screen resize to tablet/desktop
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+      if (window.innerWidth >= 640 && navMenu.classList.contains('open')) {
         navMenu.classList.remove('open');
         mobileMenuBtn.classList.remove('active');
       }
