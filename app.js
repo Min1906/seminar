@@ -144,7 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       navMenu.classList.toggle('open');
     });
 
@@ -152,6 +153,20 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
       });
+    });
+
+    // Close mobile menu when clicking anywhere outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+      }
+    });
+
+    // Automatically close mobile menu on screen resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+      }
     });
   }
 
@@ -256,11 +271,11 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const reflectionData = {
     sem1: {
-      title: "Refleksi Mendalam: Semester I (Fondasi & Teori)",
+      title: "Refleksi Mendalam: Semester I (Fondasi, Teori & Lembar Kerja)",
       subtitle: "Transformasi Paradigma dari 'Ahli Coding' Menjadi 'Pendidik Berjiwa Pedagogik'",
       category: "jurnal",
-      docId: "doc-1",
-      docName: "Jurnal Refleksi Kritis Semester I & II (Model Gibbs & 4F)",
+      docId: "doc-lk2",
+      docName: "Lembar Kerja 2 (LK 2) - Desain Refleksi Kritis Mata Kuliah Semester 1",
       content: `
         <div class="modal-section">
           <h4 class="modal-section-title">Mata Kuliah Esensial yang Ditempuh</h4>
@@ -273,18 +288,26 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-section">
           <h4 class="modal-section-title">Refleksi Model 4F (Facts, Feelings, Findings, Future)</h4>
           <ul style="padding-left: 20px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
-            <li><strong>Facts:</strong> Mengkaji teori pendidikan progresif dan merancang asesmen diagnostik non-kognitif.</li>
+            <li><strong>Facts:</strong> Mengkaji teori pendidikan progresif, menyelesaikan <strong>Lembar Kerja 2 (LK 2)</strong> refleksi mata kuliah inti/selektif, dan merancang asesmen diagnostik non-kognitif.</li>
             <li><strong>Feelings:</strong> Sempat merasa tertantang saat menyederhanakan konsep algoritma abstrak untuk siswa pemula.</li>
             <li><strong>Findings:</strong> Pendekatan visual dan analogi dunia nyata (SAVI) mempercepat pemahaman logika siswa hingga 40%.</li>
             <li><strong>Future:</strong> Selalu mengintegrasikan studi kasus autentik sebelum mengenalkan sintaks kode.</li>
           </ul>
         </div>
-        <div class="modal-section" style="background: rgba(99,102,241,0.08); padding: 12px; border-radius: 8px; border-left: 3px solid var(--primary); margin-top: 14px;">
-          <h4 class="modal-section-title" style="margin-bottom: 2px;">Dokumen Terkait di Gudang Arsip:</h4>
-          <p style="margin: 0; color: var(--text-main); font-weight: 600;">📄 Jurnal Refleksi Kritis Semester I & II (Format PDF • 2.8 MB)</p>
+        <div class="modal-section" style="background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(6,182,212,0.12)); padding: 16px; border-radius: 10px; border-left: 4px solid var(--primary); margin-top: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <h4 class="modal-section-title" style="margin-bottom: 2px;">📄 Berkas Lembar Kerja Refleksi Terlampir:</h4>
+              <p style="margin: 0; color: var(--text-main); font-weight: 700;">LEMBAR KERJA 2 (LK 2).docx • 2.68 MB</p>
+              <p style="margin: 2px 0 0 0; font-size: 0.8rem; color: var(--text-muted);">Dokumen refleksi komprehensif mata kuliah Semester 1 PPG Calon Guru Informatika.</p>
+            </div>
+            <a href="LEMBAR%20KERJA%202%20(LK%202).docx" download="LEMBAR KERJA 2 (LK 2).docx" class="btn btn-primary btn-sm" style="text-decoration: none;">
+              <span>📥 Unduh Lembar Kerja 2 (DOCX)</span>
+            </a>
+          </div>
         </div>
       `,
-      actionText: "📂 Buka Berkas di Gudang Arsip"
+      actionText: "📂 Buka Dokumen di Arsip"
     },
     sem2: {
       title: "Refleksi Mendalam: Semester II (PPL & Aplikasi Nyata)",
@@ -737,10 +760,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const DB_VERSION = 1;
   const DOCS_STORE = 'documents';
   const FILES_STORE = 'files';
-  const STORAGE_KEY = 'seminar_crud_documents_v4';
+  const STORAGE_KEY = 'seminar_crud_documents_v5';
 
   // Base default official PPG documents for Muhammad Iqbal Nugroho, S.Kom.
   const defaultOfficialDocuments = [
+    {
+      id: 'doc-lk2',
+      title: "Lembar Kerja 2 (LK 2) - Desain Refleksi Kritis Mata Kuliah Semester 1",
+      desc: "Dokumen refleksi komprehensif mata kuliah inti & selektif Semester 1 PPG Prajabatan Informatika.",
+      category: "jurnal",
+      categoryName: "Jurnal Refleksi",
+      format: "DOCX",
+      size: "2.68 MB",
+      status: "✓ Terverifikasi",
+      icon: "📝",
+      fileName: "LEMBAR KERJA 2 (LK 2).docx",
+      fileUrl: "LEMBAR KERJA 2 (LK 2).docx",
+      isUserUploaded: false,
+      hasFileBlob: false
+    },
     {
       id: 'doc-1',
       title: "Jurnal Refleksi Kritis Semester I & II (Model Gibbs & 4F)",
@@ -884,6 +922,17 @@ document.addEventListener('DOMContentLoaded', () => {
           defaultOfficialDocuments.forEach(doc => store.put(doc));
           this.saveToLocalCache(defaultOfficialDocuments);
         } else {
+          // Check if doc-lk2 is present, if not sync it
+          const hasLk2 = docs.some(d => d.id === 'doc-lk2' || d.fileName === 'LEMBAR KERJA 2 (LK 2).docx');
+          if (!hasLk2) {
+            const tx = this.db.transaction([DOCS_STORE], 'readwrite');
+            const store = tx.objectStore(DOCS_STORE);
+            const lk2Doc = defaultOfficialDocuments.find(d => d.id === 'doc-lk2');
+            if (lk2Doc) {
+              store.put(lk2Doc);
+              docs.unshift(lk2Doc);
+            }
+          }
           this.saveToLocalCache(docs);
         }
       } catch (e) {
@@ -1250,6 +1299,21 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
+    } else if (doc.fileName === 'LEMBAR KERJA 2 (LK 2).docx' || (doc.format || '').toUpperCase() === 'DOCX') {
+      previewHtml = `
+        <div class="modal-section" style="background: var(--bg-surface-raised); padding: 24px; border-radius: var(--radius-md); border: 1px dashed var(--border-color); text-align: center;">
+          <div style="font-size: 3.5rem; margin-bottom: 12px;">📝</div>
+          <h5 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 8px;">${doc.title}</h5>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; max-width: 520px; margin: 0 auto 16px auto;">
+            Dokumen asli Microsoft Word (.docx) yang memuat refleksi kritis mendalam mata kuliah Semester 1 PPG Prajabatan Informatika.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <a href="LEMBAR%20KERJA%202%20(LK%202).docx" download="LEMBAR KERJA 2 (LK 2).docx" class="btn btn-primary" style="text-decoration: none;">
+              <span>📥 Unduh Berkas DOCX (2.68 MB)</span>
+            </a>
+          </div>
+        </div>
+      `;
     } else {
       previewHtml = `
         <div class="modal-section" style="background: var(--bg-surface-raised); padding: 24px; border-radius: var(--radius-md); border: 1px dashed var(--border-color); text-align: center;">
@@ -1289,6 +1353,18 @@ document.addEventListener('DOMContentLoaded', () => {
   async function triggerDocDownload(doc) {
     showToast('Menyiapkan Berkas', `Sedang mengambil berkas: ${doc.title}...`, 'info');
     
+    // Direct static download for LEMBAR KERJA 2
+    if (doc.fileName === 'LEMBAR KERJA 2 (LK 2).docx' || doc.fileUrl) {
+      const a = document.createElement('a');
+      a.href = doc.fileUrl || 'LEMBAR%20KERJA%202%20(LK%202).docx';
+      a.download = doc.fileName || 'LEMBAR KERJA 2 (LK 2).docx';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('Unduhan Berhasil', 'Berkas LEMBAR KERJA 2 (LK 2).docx berhasil diunduh.', 'success');
+      return;
+    }
+
     const blob = await SeminarStorage.getFileBlob(doc.id);
 
     if (blob) {
