@@ -35,7 +35,7 @@ Website interaktif canvas **e-Portofolio Seminar Kelulusan Program Pendidikan Pr
 
 1. Clone repositori ini:
    ```bash
-   git clone <URL_REPOSITORI_ANDA>
+   git clone https://github.com/Min1906/seminar.git
    ```
 2. Buka folder proyek dan jalankan `index.html` langsung di browser atau menggunakan live server lokal.
 
