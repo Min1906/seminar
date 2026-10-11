@@ -277,9 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
     sem1: {
       title: "Refleksi Mendalam: Semester I (Fondasi, Teori & Lembar Kerja)",
       subtitle: "Transformasi Paradigma dari 'Ahli Coding' Menjadi 'Pendidik Berjiwa Pedagogik'",
-      category: "jurnal",
-      docId: "doc-lk2",
-      docName: "Lembar Kerja 2 (LK 2) - Desain Refleksi Kritis Mata Kuliah Semester 1",
+      category: "foto",
+      docId: "",
+      docName: "Foto Arsip Semester 1 – Karya Infografis Refleksi",
       content: `
         <div class="modal-section">
           <h4 class="modal-section-title">Mata Kuliah Esensial yang Ditempuh</h4>
@@ -310,8 +310,38 @@ document.addEventListener('DOMContentLoaded', () => {
             </a>
           </div>
         </div>
+        <div class="modal-section" style="margin-top: 14px;">
+          <h4 class="modal-section-title" style="margin-bottom: 10px;">📸 Foto Arsip Semester 1 – Karya Infografis Refleksi</h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px;">
+            <a href="arsip semester 1/Computational Thinking Reflection Infographic.png" target="_blank" title="Computational Thinking Reflection Infographic" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Computational Thinking Reflection Infographic.png" alt="Computational Thinking Reflection Infographic" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Computational Thinking</div>
+            </a>
+            <a href="arsip semester 1/Growth Mindset Reflection Worksheet.png" target="_blank" title="Growth Mindset Reflection Worksheet" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Growth Mindset Reflection Worksheet.png" alt="Growth Mindset Reflection Worksheet" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Growth Mindset</div>
+            </a>
+            <a href="arsip semester 1/Jurnal Refleksi Sosial Emosional.png" target="_blank" title="Jurnal Refleksi Sosial Emosional" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Jurnal Refleksi Sosial Emosional.png" alt="Jurnal Refleksi Sosial Emosional" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Sosial Emosional</div>
+            </a>
+            <a href="arsip semester 1/Modern Indonesian Teacher Reflection Infographic.png" target="_blank" title="Modern Indonesian Teacher Reflection Infographic" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Modern Indonesian Teacher Reflection Infographic.png" alt="Modern Indonesian Teacher Reflection Infographic" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Guru Modern</div>
+            </a>
+            <a href="arsip semester 1/Reflective Learning Journey Poster.png" target="_blank" title="Reflective Learning Journey Poster" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Reflective Learning Journey Poster.png" alt="Reflective Learning Journey Poster" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Learning Journey</div>
+            </a>
+            <a href="arsip semester 1/Student Reflection Learning Infographic Poster.png" target="_blank" title="Student Reflection Learning Infographic Poster" style="display:block; border-radius:8px; overflow:hidden; border:2px solid rgba(99,102,241,0.3); transition: border-color 0.2s, transform 0.2s; text-decoration:none;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='scale(1.04)'" onmouseout="this.style.borderColor='rgba(99,102,241,0.3)';this.style.transform='scale(1)'">
+              <img src="arsip semester 1/Student Reflection Learning Infographic Poster.png" alt="Student Reflection Learning Infographic Poster" style="width:100%; height:100px; object-fit:cover; display:block;">
+              <div style="padding:4px 6px; font-size:0.72rem; color:var(--text-muted); background:var(--bg-surface-raised);">Student Reflection</div>
+            </a>
+          </div>
+          <p style="margin-top:8px; font-size:0.78rem; color:var(--text-muted);">💡 Klik foto untuk membuka ukuran penuh. Semua foto tersimpan di gudang arsip kategori <strong>📸 Foto Arsip Sem. 1</strong>.</p>
+        </div>
       `,
-      actionText: "📂 Buka Dokumen di Arsip"
+      actionText: "📸 Buka Foto Arsip Semester 1 di Gudang"
     },
     sem2: {
       title: "Refleksi Mendalam: Semester II (PPL & Aplikasi Nyata)",
